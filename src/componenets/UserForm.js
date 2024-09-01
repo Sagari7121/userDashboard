@@ -1,7 +1,8 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
-import "./NewUser.css";
 import { useSnackbar } from "notistack";
+
+import "./UserForm.css";
 
 const error = {
   variant: "error",
@@ -12,7 +13,7 @@ const success = {
   variant: "success",
   autoHideDuration: 5000,
 };
-export default function NewUser() {
+export default function UserForm() {
   const navigate = useNavigate();
   const location = useLocation();
 

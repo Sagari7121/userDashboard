@@ -1,7 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
-import "./User.css";
 import axios from "axios";
 import { useSnackbar } from "notistack";
+
+import "./UserCard.css";
 
 const error = {
   variant: "error",
@@ -12,7 +13,7 @@ const success = {
   variant: "success",
   autoHideDuration: 5000,
 };
-export default function User({ user, handleDelete }) {
+export default function UserCard({ user, handleDelete }) {
   const navigate = useNavigate();
   const { enqueueSnackbar } = useSnackbar();
 

@@ -1,6 +1,5 @@
-import User from "./User";
-
 import axios from "axios";
+import UserCard from "./UserCard";
 import { useEffect, useState } from "react";
 import { useSnackbar } from "notistack";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -67,7 +66,7 @@ export default function Users() {
           usersData.map((item) => {
             return (
               <SwiperSlide key={item.id}>
-                <User key={item.id} user={item}/>
+                <UserCard key={item.id} user={item}/>
               </SwiperSlide>
             );
           })}

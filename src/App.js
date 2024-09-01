@@ -3,8 +3,8 @@ import "./App.css";
 
 import Header from "./componenets/Header";
 import Users from "./componenets/Users";
-import NewUser from "./componenets/NewUser";
 import View from "./componenets/View";
+import UserForm from "./componenets/UserForm";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           element={
             <>
               <Header path="true" />
-              <NewUser />
+              <UserForm />
             </>
           }
         />
@@ -42,7 +42,7 @@ function App() {
           element={
             <>
               <Header />
-              <NewUser />
+              <UserForm />
             </>
           }
         />
