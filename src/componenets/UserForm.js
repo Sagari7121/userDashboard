@@ -255,7 +255,7 @@ export default function UserForm() {
           Reset
         </button>}
         <button type="submit" className="button">
-          {location.state ? "Edit" : "Submit"}
+          {location.state ? "Update" : "Submit"}
         </button>
       </p>
     </form>
