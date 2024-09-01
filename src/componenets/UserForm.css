@@ -75,7 +75,8 @@ hr {
 
 .button:hover,
 .button:focus {
-  background-color: #319890;
+  background-color: #01322e;
+  font-weight: bold;
 }
 
 .button-flat {
