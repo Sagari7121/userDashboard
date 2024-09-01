@@ -1,10 +1,16 @@
-# Getting Started with Create React App
+# User Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a user dashboard page built with React using `create-react-app`. 
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+To get started with the project, you can clone the repository and install the dependencies:
+
+\```bash
+git clone https://github.com/Sagari7121/userDashboard
+cd userDashboard
+npm install
+\```
 
 ### `npm start`
 
@@ -31,40 +37,55 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Note:** This is a one-way operation. Once you `eject`, you can’t go back!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The project structure follows a standard `create-react-app` layout:
 
-## Learn More
+\```
+userDashboard/
+├── public/
+│   └── index.html
+|  
+├── src/
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── UserCard.js
+│   │   ├── UserForm.js
+│   │   ├── UserInfo.js
+|   |   └── Users.js
+│   ├── App.js
+│   ├── index.js
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── README.md
+└── ...
+\```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Features 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Responsive Design**: The website is fully responsive and works on various devices.
+- **User Information** : Display user's specific data.
+- **Add new user**: Add new user to the users list.
+- **Delete user**: Delete user from the list.
+- **Edit user**: Edit exisiting user information
 
-### Code Splitting
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **React**: JavaScript library for building user interfaces.
+- **CSS**: For styling the components.
+- **React Router**: For routing and navigation (if applicable).
+- **Notistack**: To display confirmation, alert or acknowledgement about a task carried out by the app.
+- **Swiper**: To provide  infinite scrolling for the user list.
 
-### Analyzing the Bundle Size
+## Improvements 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **UI**: UI can be improved further to use better colors and fonts that suit the context properly.
+- **Authentication**: Authentication will secure the user information and allows only authenticated users to
+view the information
+- **Search**: Option to search the user by name, username, id, etc with denouncing.
+- **Backend**: Custom written backend.
