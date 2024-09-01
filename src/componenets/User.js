@@ -17,8 +17,9 @@ export default function User({ user, handleDelete }) {
   const { enqueueSnackbar } = useSnackbar();
 
   function handleEdit() {
-    navigate(`edit/${user.id}`, { state: { user: user } });
+    navigate(`/user/${user.id}/edit`, { state: { user: user } });
   }
+  
   async function handleDelete() {
     try {
       const response = await axios.delete(
@@ -45,7 +46,7 @@ export default function User({ user, handleDelete }) {
         <button className="delete" onClick={() => handleDelete()}>
           Delete
         </button>
-        <Link to={'user/' + user.id} className="view">View</Link>
+        <Link to={'../user/' + user.id} className="view">View</Link>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import "./App.css";
 import Header from "./componenets/Header";
 import Users from "./componenets/Users";
 import NewUser from "./componenets/NewUser";
-import View from './componenets/View'
+import View from "./componenets/View";
 
 function App() {
   return (
@@ -14,8 +14,17 @@ function App() {
           path="/"
           element={
             <>
-              <Header path='/'/>
+              <Header />
               <Users />
+            </>
+          }
+        />
+        <Route
+          path="/user/new"
+          element={
+            <>
+              <Header path="true" />
+              <NewUser />
             </>
           }
         />
@@ -23,25 +32,16 @@ function App() {
           path="/user/:userID"
           element={
             <>
-              <Header path='/'/>
+              <Header />
               <View />
             </>
           }
         />
         <Route
-          path="/newuser"
+          path="/user/:userId/edit"
           element={
             <>
-              <Header path='/newuser'/>
-              <NewUser />
-            </>
-          }
-        />
-        <Route
-          path="/edit/:id"
-          element={
-            <>
-              <Header path='/newuser'/>
+              <Header />
               <NewUser />
             </>
           }
