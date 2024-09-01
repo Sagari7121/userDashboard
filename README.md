@@ -6,11 +6,11 @@ This project is a user dashboard page built with React using `create-react-app`.
 
 To get started with the project, you can clone the repository and install the dependencies:
 
-\```bash
+```bash
 git clone https://github.com/Sagari7121/userDashboard
 cd userDashboard
 npm install
-\```
+```
 
 ### `npm start`
 
@@ -45,7 +45,7 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 
 The project structure follows a standard `create-react-app` layout:
 
-\```
+```
 userDashboard/
 ├── public/
 │   └── index.html
@@ -64,7 +64,7 @@ userDashboard/
 ├── package-lock.json
 ├── README.md
 └── ...
-\```
+```
 
 ## Features 
 
