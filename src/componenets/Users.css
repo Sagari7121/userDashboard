@@ -1,0 +1,8 @@
+main{
+    margin-top: 15vh;
+}
+.swiper-button-prev, .swiper-button-next{
+    color: white;
+    font-weight: bolder;
+    height: 30px;
+}

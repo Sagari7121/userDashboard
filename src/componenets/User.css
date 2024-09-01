@@ -1,0 +1,61 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: black;
+    color: white;
+    border: 1px grey solid;
+    border-radius: 10px;
+    padding: 50px;
+    padding-top: 0 ;
+    max-width: 300px;
+    font-weight: bold;
+
+}
+.card > img{
+    height: 150px;
+    object-fit: contain;
+}
+.id{
+    color: grey;
+}
+.email{
+    color: #287777;
+}
+.username{
+    color: #40bfbc;
+}
+.company{
+    color: #51e0e0;
+}
+.btn{
+    display: flex;
+    justify-content:end;
+    gap: 10px;
+    margin-top: 30px;
+}
+.delete {
+    background-color: #287777;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px #287777 solid;
+    border-radius: 8px;
+}
+.edit{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px black solid;
+    border-radius: 8px;
+}
+.view{
+    background-color: #40bfbc;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px #40bfbc solid;
+    border-radius: 8px;
+    text-decoration: none;
+}
