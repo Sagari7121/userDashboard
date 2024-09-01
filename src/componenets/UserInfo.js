@@ -4,14 +4,14 @@ import { useEffect, useState } from "react";
 import { useSnackbar } from "notistack";
 import axios from "axios";
 
-import "./View.css";
+import "./UserInfo.css";
 
 const error = {
   variant: "error",
   autoHideDuration: 5000,
 };
 
-export default function View() {
+export default function UserInfo() {
   const [user, setUser] = useState(undefined);
 
   const id = useParams();
@@ -36,7 +36,7 @@ export default function View() {
     } catch (err) {
       enqueueSnackbar("Something went wrong :(", error);
     }
-  }, [id]);
+  }, []);
 
   return (
     <div className="userInfo">
